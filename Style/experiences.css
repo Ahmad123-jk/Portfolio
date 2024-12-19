@@ -1,0 +1,130 @@
+/* Expériences */
+.experience-section {
+    padding: 40px;
+    margin-top: 100px;
+    height: 100%;
+}
+
+.experience-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #00bfff;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease; /* Ajout de transition pour le glow */
+}
+
+/* Glow sur le titre de la section */
+.experience-section h2:hover {
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.6); /* Glow bleu autour du titre */
+}
+
+.experience-item {
+    background-color:  #343a40;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease, box-shadow 0.3s ease; /* Transition ajoutée */
+}
+
+/* Glow au survol des éléments de l'expérience */
+.experience-item:hover {
+    transform: translateY(-5px); /* Légère levée */
+    box-shadow: 0 8px 20px rgba(0, 191, 255, 0.6); /* Glow bleu lumineux autour de l'élément */
+}
+
+.experience-item h3.degree-title {
+    font-size: 1.8rem;
+    color: #00bfff;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s ease; /* Transition ajoutée pour le glow */
+}
+
+/* Glow au survol du titre de l'expérience */
+.experience-item h3.degree-title:hover {
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.6); /* Glow bleu autour du titre */
+}
+
+.experience-item .company-details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.experience-item p.company-name {
+    font-size: 1.2rem;
+    color: #ff6f61;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Transition ajoutée pour le changement de couleur */
+}
+
+/* Glow au survol du nom de l'entreprise */
+.experience-item p.company-name:hover {
+    color: #00bfff; /* Changement de couleur du texte au survol */
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.6); /* Glow bleu autour du nom de l'entreprise */
+}
+
+.experience-item .education-date {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.education-date .date-icon {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.education-date .date-text {
+    font-size: 1rem;
+    color: #bbb;
+}
+
+.experience-item .task-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1rem;
+    color: #bbb;
+}
+
+.experience-item .task-list li {
+    margin-bottom: 5px;
+}
+
+/* Pour le nom de l'entreprise et la date */
+.experience-item .company-name {
+    font-size: 1.2rem;
+    color: #ff6f61;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.experience-item .company-name i {
+    margin-right: 10px; /* Espacement entre l'icône et le texte */
+    color: #00bfff; /* Couleur de l'icône */
+}
+
+.experience-item .date-text {
+    font-size: 1rem;
+    color: #bbb;
+    margin-left: 10px; /* Espacement entre le texte du nom de l'entreprise et la date */
+}
+
+.experience-item .education-date .date-icon {
+    width: 18px;
+    margin-right: 5px; /* Espacement entre l'icône et la date */
+    color: #00bfff;
+}
+
+.experience-item .education-date .date-text {
+    font-size: 1rem;
+    color: #bbb;
+    margin-left: 0; 
+}

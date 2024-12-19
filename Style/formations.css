@@ -1,0 +1,154 @@
+/* Formations Page Styles */
+.education {
+    margin-top: 80px;
+    padding: 60px 30px;
+    background: #181818;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.8);
+    position: relative;
+    height: 100%;
+}
+
+/* Dégradé lumineux et léger effet de glow */
+.education::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 191, 255, 0.15) 10%, rgba(0, 0, 0, 0.8) 90%);
+    border-radius: 25px;
+    z-index: -1;
+    animation: glow 4s infinite ease-in-out;
+}
+
+/* Animation de glow */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 15px rgba(0, 191, 255, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 35px rgba(0, 191, 255, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 15px rgba(0, 191, 255, 0.4);
+    }
+}
+
+/* Chaque élément de formation */
+.education-item {
+    width: 350px; /* Augmenter la largeur des cadres */
+    padding: 35px 30px;
+    background: #23272b;
+    border-radius: 18px;
+    border-left: 8px solid #00bfff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+    opacity: 0.95;
+}
+
+/* Effet au survol */
+.education-item:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+    background-color: #2b2f35;
+    opacity: 1;
+}
+
+/* Effet au survol sur le titre */
+.education-item:hover .degree-title {
+    color: #00c8ff;
+    transform: scale(1.1);
+}
+
+/* Effet lumineux subtil autour de l'item au survol */
+.education-item::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 90%;
+    height: 90%;
+    background: rgba(0, 191, 255, 0.1);
+    border-radius: 15px;
+    z-index: -2;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.education-item:hover::after {
+    opacity: 1;
+}
+
+/* Titre du diplôme */
+.degree-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #00bfff;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Nom de l'université */
+.university-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #bbb;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+
+/* Date de la formation */
+.education-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    font-size: 1rem;
+    color: #bbb;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.date-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #00bfff;
+    transition: color 0.3s ease;
+}
+
+.date-icon:hover {
+    color: #00c8ff;
+}
+
+/* Ajouter un effet de lumière douce sur la page */
+.education-item::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 191, 255, 0.1);
+    border-radius: 18px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.education-item:hover::before {
+    opacity: 1;
+}

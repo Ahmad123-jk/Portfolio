@@ -1,0 +1,88 @@
+/* Compétences Section */
+.competences-section {
+    margin: 100px auto;
+    background-color: #232323;  /* Fond plus clair que le noir pour un effet plus doux */
+    color: #fff;
+    padding: 40px 20px;
+    max-width: 1200px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 191, 255, 0.6); /* Glow bleu autour de la section */
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+/* Survol de la section compétences */
+.competences-section:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7), 0 0 60px rgba(0, 191, 255, 0.8); /* Effet de glow plus fort au survol */
+}
+
+.competences-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #00bfff; /* Bleu clair similaire à "Formations" */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: box-shadow 0.3s ease; /* Transition ajoutée pour le glow */
+}
+
+/* Glow sur le titre */
+.competences-section h2:hover {
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.8); /* Glow bleu autour du titre */
+}
+
+/* Élément de compétence */
+.competence-item {
+    background-color: #343a40;  /* Fond gris foncé */
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    border: 1px solid #495057;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Survol des éléments de compétence */
+.competence-item:hover {
+    background-color: #495057;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 0 25px rgba(0, 191, 255, 0.7); /* Glow bleu au survol */
+}
+
+/* Titres des sections */
+.competence-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #00bfff; /* Bleu clair */
+    text-transform: uppercase;
+    transition: box-shadow 0.3s ease; /* Transition ajoutée pour le glow */
+}
+
+/* Glow sur les titres des éléments de compétence */
+.competence-item h3:hover {
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.8); /* Glow bleu autour des titres */
+}
+
+.competence-item h4 {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #00bfff; /* Bleu clair */
+    text-transform: uppercase;
+    border-left: 4px solid #00bfff;
+    padding-left: 10px;
+}
+
+/* Texte de base */
+.competence-item p {
+    font-size: 1rem;
+    color: #bbb;  /* Texte gris clair */
+    line-height: 1.8;
+}
+
+/* Liens de navigation actifs */
+.nav-links .active {
+    color: #00bfff; /* Bleu clair pour le lien actif */
+    font-weight: bold;
+    text-decoration: underline;
+}

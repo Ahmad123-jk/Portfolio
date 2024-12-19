@@ -1,0 +1,159 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Body and Background */
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    z-index: 10; /* S'assurer que le menu est au-dessus des autres éléments */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+    margin-right: 40px;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #00bfff;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    min-height: 90vh;
+}
+
+.content {
+    max-width: 50%;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.content h1 span {
+    color: #00bfff;
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    color: #00bfff;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #bbb;
+}
+
+.buttons .btn {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #00bfff;
+    color: #fff;
+}
+
+.btn-outline {
+    border: 2px solid #00bfff;
+    color: #00bfff;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+
+.hero-image {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start; /* Aligner l'image juste sous la navigation */
+    height: 60vh; /* Occuper la moitié de la hauteur de la page */
+    margin-top: 10px; /* Ajuste en fonction de la taille de la nav-bar */
+    margin-right: 40px; /* Ajuste en fonction de la taille de la nav-bar */
+    overflow: hidden; /* Évite le débordement */
+}
+
+.hero-image img {
+    max-width: 120%; /* S'assurer que l'image ne dépasse pas la largeur */
+    height: 100%; /* S'assurer qu'elle s'adapte à la hauteur définie */
+    object-fit: cover; /* Coupe l'image proprement pour remplir la section */
+    border-radius : 50%;
+    border: 5px solid white;
+}
+
+/* Footer Social Links */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    width: 100%;
+    bottom:0;
+}
+
+
+
+.social-links a img {
+    height: 30px; /* Hauteur fixe */
+    width: auto;  /* Laisse la largeur s'ajuster en fonction de la hauteur */
+    margin-right: 15px;
+    transition: transform 0.3s;
+    object-fit: contain; /* Maintient les proportions de l'image sans la déformer */
+}
+
+.social-links a {
+    margin-right: 20px; 
+}
+
+.social-links a:hover img {
+    transform: scale(1.2);
+}
+
+

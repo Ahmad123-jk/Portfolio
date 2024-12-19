@@ -1,0 +1,116 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corps du site */
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: color 0.3s, box-shadow 0.3s ease;
+}
+
+/* Glow effet sur les liens de navigation */
+.nav-links a:hover {
+    color: #00bfff;
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.6); /* Glow lumineux autour des liens */
+}
+
+/* Section Projets */
+.projects-section {
+    padding: 100px 20px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    color: #00bfff;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.project-item {
+    background-color: #222;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.3); /* Light glow on default state */
+}
+
+/* Survol */
+.project-item:hover {
+    background-color: #495057;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 191, 255, 0.6); /* Glow lumineux plus intense au survol */
+    transition: all 0.3s ease-in-out;
+}
+
+.project-item h3 {
+    font-size: 1.8rem;
+    color: #00bfff;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 1.1rem;
+    color: #bbb;
+    line-height: 1.5;
+}
+
+
+/* Skills used (Technologies) */
+.skills-used {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-used .tech {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+/* Glow sur les technologies au survol */
+.skills-used .tech:hover {
+    background-color: #00bfff;
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.6); /* Glow autour des technologies */
+}
