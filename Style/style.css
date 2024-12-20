@@ -156,4 +156,36 @@ footer {
     transform: scale(1.2);
 }
 
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content h2 {
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}
+
 

@@ -114,3 +114,33 @@ header {
     background-color: #00bfff;
     box-shadow: 0 0 10px rgba(0, 191, 255, 0.6); /* Glow autour des technologies */
 }
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .projets-section {
+        padding: 30px 15px;
+    }
+
+    .projets-section h2 {
+        font-size: 2rem;
+    }
+
+    .projet-item {
+        padding: 15px;
+    }
+
+    .projet-item h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+}

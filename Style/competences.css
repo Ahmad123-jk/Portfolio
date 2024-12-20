@@ -86,3 +86,27 @@
     font-weight: bold;
     text-decoration: underline;
 }
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .competences-section {
+        padding: 30px 15px;
+    }
+
+    .competences-section h2 {
+        font-size: 2rem;
+    }
+
+    .competence-item {
+        padding: 20px;
+    }
+
+    .competence-item h3 {
+        font-size: 1.6rem;
+    }
+
+    .competence-item p {
+        font-size: 0.9rem;
+    }
+}

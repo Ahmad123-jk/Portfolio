@@ -128,3 +128,63 @@
     color: #bbb;
     margin-left: 0; 
 }
+
+
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 768px (tablets and mobile) */
+@media (max-width: 768px) {
+    .experience-section {
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .experience-item {
+        width: 100%;
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .experience-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .experience-item h3.degree-title {
+        font-size: 1.6rem;
+    }
+
+    .experience-item p.company-name {
+        font-size: 1rem;
+    }
+
+    .experience-item .task-list {
+        font-size: 0.9rem;
+    }
+}
+
+/* For screens smaller than 480px (mobile phones) */
+@media (max-width: 480px) {
+    .experience-section {
+        padding: 15px;
+    }
+
+    .experience-item {
+        padding: 10px;
+    }
+
+    .experience-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .experience-item h3.degree-title {
+        font-size: 1.4rem;
+    }
+
+    .experience-item p.company-name {
+        font-size: 0.9rem;
+    }
+
+    .experience-item .task-list {
+        font-size: 0.8rem;
+    }
+}
